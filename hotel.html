@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ShoeZone Ethiopia | Men's Fashion</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <a href="#" class="logo">SHOE<span>ZONE</span></a>
+
+        <nav>
+            <a href="#home" data-translate="home">Home</a>
+            <a href="#products" data-translate="products">Products</a>
+            <a href="#about" data-translate="about">About Us</a>
+            <a href="#contact" data-translate="contact">Contact</a>
+            <a href="#cart" data-translate="cart">Cart</a>
+        </nav>
+
+        <select id="languageSelect" aria-label="Choose language">
+            <option value="en">English</option>
+            <option value="am">አማርኛ</option>
+            <option value="om">Afaan Oromoo</option>
+        </select>
+    </header>
+
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+            <p class="small-title" data-translate="welcome">
+                WELCOME TO SHOEZONE ETHIOPIA
+            </p>
+
+            <h1 data-translate="heroTitle">
+                STYLE THAT<br>
+                DEFINES YOU.
+            </h1>
+
+            <p data-translate="heroDescription">
+                Discover men's shoes, shirts, trousers, and accessories.
+                Quality men's fashion delivered across Ethiopia.
+            </p>
+
+            <a href="#products" class="btn" data-translate="shopNow">
+                SHOP NOW
+            </a>
+        </div>
+
+    </section>
+
+
+    <!-- FEATURES -->
+    <section class="features">
+
+        <div class="feature">
+            <h3>QUALITY FIRST</h3>
+            <p>We prioritize genuine materials and verified products.</p>
+        </div>
+
+        <div class="feature">
+            <h3>ETHIOPIA-WIDE</h3>
+            <p>Orders welcome from across Ethiopia, subject to delivery availability.</p>
+        </div>
+
+        <div class="feature">
+            <h3>ORDER DIRECTLY</h3>
+            <p>Contact us to confirm sizes, prices, and availability.</p>
+        </div>
+
+    </section>
+
+
+    <!-- PRODUCTS -->
+    <section class="products-section" id="products">
+
+        <div class="section-heading">
+            <p class="small-title">OUR COLLECTION</p>
+
+            <h2 data-translate="productsTitle">MEN'S FASHION</h2>
+
+            <p data-translate="productsDescription">
+                Find your style. Choose your quality.
+            </p>
+        </div>
+
+
+        <!-- SEARCH AND FILTER -->
+        <div class="product-controls">
+
+            <input
+                type="search"
+                id="searchInput"
+                placeholder="Search men's fashion..."
+                aria-label="Search products"
+            >
+
+            <select id="categoryFilter" aria-label="Filter products">
+                <option value="all">All Products</option>
+                <option value="shoes">Men's Shoes</option>
+                <option value="shirts">Shirts</option>
+                <option value="trousers">Trousers</option>
+                <option value="accessories">Accessories</option>
+            </select>
+
+        </div>
+
+
+        <!-- PRODUCT CARDS -->
+        <div class="product-container" id="productContainer">
+
+            <!-- PRODUCT 1 -->
+            <article class="product-card" data-category="shoes">
+
+                <div class="product-image">
+                    <img
+                        src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=700&q=80"
+                        alt="Men's sporty sneakers"
+                        loading="lazy"
+                    >
+                </div>
+
+                <div class="product-info">
+                    <p class="product-category">MEN'S SHOES</p>
+
+                    <h3>Sport Sneakers</h3>
+
+                    <p class="price">ETB 2500</p>
+
+                    <p class="availability">Example listing — confirm stock</p>
+
+                    <button
+                        class="btn add-to-cart"
+                        data-name="Sport Sneakers"
+                        data-price="2500"
+                    >
+                        ADD TO CART
+                    </button>
+                </div>
+
+            </article>
+
+
+            <!-- PRODUCT 2 -->
+            <article class="product-card" data-category="shoes">
+
+                <div class="product-image">
+                    <img
+                        src="https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=700&q=80"
+                        alt="Men's casual shoes"
+                        loading="lazy"
+                    >
+                </div>
+
+                <div class="product-info">
+                    <p class="product-category">MEN'S SHOES</p>
+
+                    <h3>Casual Sneakers</h3>
+
+                    <p class="price">ETB 2,500</p>
+
+                    <p class="availability">Example listing — confirm stock</p>
+
+                    <button
+                        class="btn add-to-cart"
+                        data-name="Casual Sneakers"
+                        data-price="2500"
+                    >
+                        ADD TO CART
+                    </button>
+                </div>
+
+            </article>
+
+
+            <!-- PRODUCT 3 -->
+            <article class="product-card" data-category="shoes">
+
+                <div class="product-image">
+                    <img
+                        src="https://images.unsplash.com/photo-1495555961986-6d4c1ecb7be3?auto=format&fit=crop&w=700&q=80"
+                        alt="Men's fashion shoes"
+                        loading="lazy"
+                    >
+                </div>
+
+                <div class="product-info">
+                    <p class="product-category">MEN'S SHOES</p>
+
+                    <h3>Classic Fashion Shoes</h3>
+
+                    <p class="price">ETB 4000</p>
+
+                    <p class="availability">Example listing — confirm stock</p>
+
+                    <button
+                        class="btn add-to-cart"
+                        data-name="Classic Fashion Shoes"
+                        data-price="4000"
+                    >
+                        ADD TO CART
+                    </button>
+                </div>
+
+            </article>
+
+
+            <!-- PRODUCT 4 -->
+            <article class="product-card" data-category="shirts">
+
+                <div class="product-image">
+                    <img
+                        src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=700&q=80"
+                        alt="Men's basic T-shirt"
+                        loading="lazy"
+                    >
+                </div>
+
+                <div class="product-info">
+                    <p class="product-category">MEN'S SHIRTS</p>
+
+                    <h3>Basic T-Shirt</h3>
+
+                    <p class="price">ETB 600</p>
+
+                    <p class="availability">Example listing — confirm stock</p>
+
+                    <button
+                        class="btn add-to-cart"
+                        data-name="Basic T-Shirt"
+                        data-price="600"
+                    >
+                        ADD TO CART
+                    </button>
+                </div>
+
+            </article>
+
+
+            <!-- PRODUCT 5 -->
+            <article class="product-card" data-category="shirts">
+
+                <div class="product-image">
+                    <img
+                        src="https://images.unsplash.com/photo-1598033129183-c4f50c736f10?auto=format&fit=crop&w=700&q=80"
+                        alt="Men's casual shirt"
+                        loading="lazy"
+                    >
+                </div>
+
+                <div class="product-info">
+                    <p class="product-category">MEN'S SHIRTS</p>
+
+                    <h3>Casual Shirt</h3>
+
+                    <p class="price">ETB 1500</p>
+
+                    <p class="availability">Example listing — confirm stock</p>
+
+                    <button
+                        class="btn add-to-cart"
+                        data-name="Casual Shirt"
+                        data-price="1500"
+                    >
+                        ADD TO CART
+                    </button>
+                </div>
+
+            </article>
+
+
+            <!-- PRODUCT 6 -->
+            <article class="product-card" data-category="shirts">
+
+                <div class="product-image">
+                    <img
+                        src="https://images.unsplash.com/photo-1625910513413-5fc7e2f4b6d8?auto=format&fit=crop&w=700&q=80"
+                        alt="Men's polo shirt"
+                        loading="lazy"
+                    >
+                </div>
+
+                <div class="product-info">
+                    <p class="product-category">MEN'S SHIRTS</p>
+
+                    <h3>Polo Shirt</h3>
+
+                    <p class="price">ETB 1400</p>
+
+                    <p class="availability">Example listing — confirm stock</p>
+
+                    <button
+                        class="btn add-to-cart"
+                        data-name="Polo Shirt"
+                        data-price="1400"
+                    >
+                        ADD TO CART
+                    </button>
+                </div>
+
+            </article>
+
+
+            <!-- PRODUCT 7 -->
+            <article class="product-card" data-category="trousers">
+
+                <div class="product-image">
+                    <img
+                        src="https://images.unsplash.com/photo-1542272604-787c3835535d?auto=format&fit=crop&w=700&q=80"
+                        alt="Men's jeans"
+                        loading="lazy"
+                    >
+                </div>
+
+                <div class="product-info">
+                    <p class="product-category">MEN'S TROUSERS</p>
+
+                    <h3>Men's Jeans</h3>
+
+                    <p class="price">ETB 2500</p>
+
+                    <p class="availability">Example listing — confirm stock</p>
+
+                    <button
+                        class="btn add-to-cart"
+                        data-name="Men's Jeans"
+                        data-price="2500"
+                    >
+                        ADD TO CART
+                    </button>
+                </div>
+
+            </article>
+
+
+            <!-- PRODUCT 8 -->
+            <article class="product-card" data-category="accessories">
+
+                <div class="product-image">
+                    <img
+                        src="https://images.unsplash.com/photo-1624222247344-550fb8c7a0b5?auto=format&fit=crop&w=700&q=80"
+                        alt="Men's belt accessory"
+                        loading="lazy"
+                    >
+                </div>
+
+                <div class="product-info">
+                    <p class="product-category">ACCESSORIES</p>
+
+                    <h3>Men's Belt</h3>
+
+                    <p class="price">ETB 500</p>
+
+                    <p class="availability">Example listing — confirm stock</p>
+
+                    <button
+                        class="btn add-to-cart"
+                        data-name="Men's Belt"
+                        data-price="500"
+                    >
+                        ADD TO CART
+                    </button>
+                </div>
+
+            </article>
+
+        </div>
+
+        <p class="price-notice">
+            Important: All products, images, and prices shown are examples.
+            Contact ShoeZone Ethiopia to confirm actual products, materials,
+            sizes, stock, and prices before ordering. Genuine or original
+            status will be stated only when verified.
+        </p>
+
+    </section>
+
+
+    <!-- CART -->
+    <section class="cart-section" id="cart">
+
+        <div class="section-heading">
+            <p class="small-title">YOUR SELECTION</p>
+            <h2 data-translate="cartTitle">SHOPPING CART</h2>
+        </div>
+
+        <div id="cartItems">
+            <p>Your cart is empty.</p>
+        </div>
+
+        <div class="cart-total">
+            <h3>Total: ETB <span id="cartTotal">0</span></h3>
+
+            <button id="clearCart" class="btn secondary-btn">
+                CLEAR CART
+            </button>
+
+            <button id="orderWhatsApp" class="btn">
+                ORDER ON WHATSAPP
+            </button>
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+    <section class="about-section" id="about">
+
+        <div class="about-content">
+            <p class="small-title">OUR STORY</p>
+
+            <h2 data-translate="aboutTitle">
+                MEN'S STYLE. ETHIOPIAN SERVICE.
+            </h2>
+
+            <p data-translate="aboutDescription">
+                ShoeZone Ethiopia is building a men's fashion shopping
+                experience focused on shoes, shirts, trousers, and
+                accessories. We aim to source products from Harar and
+                Dire Dawa and serve customers throughout Ethiopia.
+            </p>
+
+            <p>
+                We prioritize genuine materials, honest product descriptions,
+                and confirming product details before payment.
+            </p>
+
+            <p>
+                Delivery charges, delivery time, and payment availability
+                depend on the customer's location and the order.
+            </p>
+        </div>
+
+    </section>
+
+
+    <!-- PAYMENT AND DELIVERY -->
+    <section class="delivery-section">
+
+        <h2>PAYMENT & DELIVERY</h2>
+
+        <div class="delivery-grid">
+
+            <div>
+                <h3>DELIVERY ACROSS ETHIOPIA</h3>
+                <p>
+                    Customers from different Ethiopian cities and towns
+                    can contact us to confirm delivery availability,
+                    delivery fees, and estimated arrival time.
+                </p>
+            </div>
+
+            <div>
+                <h3>PAYMENT OPTIONS</h3>
+                <p>
+                    Bank transfer and supported mobile payments may be
+                    available. Cash on delivery is offered only where
+                    delivery arrangements permit it.
+                </p>
+            </div>
+
+            <div>
+                <h3>PRODUCT AUTHENTICITY</h3>
+                <p>
+                    Ask us to confirm the product's materials, brand,
+                    condition, size, and origin before placing your order.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+    <section class="contact-section" id="contact">
+
+        <div class="section-heading">
+            <p class="small-title">WE ARE HERE TO HELP</p>
+            <h2 data-translate="contactTitle">CONTACT SHOEZONE</h2>
+
+            <p>
+                Contact us to confirm availability, product quality,
+                prices, payment, and delivery to your location.
+            </p>
+        </div>
+
+        <div class="contact-buttons">
+
+            <a href="tel:0977090487" class="btn">
+                CALL: 0977090487
+            </a>
+
+            <a
+                href="https://wa.me/251937959272"
+                class="btn whatsapp-btn"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                WHATSAPP
+            </a>
+
+            <a
+                href="https://t.me/non2_k"
+                class="btn telegram-btn"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                TELEGRAM
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <a href="#home" class="logo">SHOE<span>ZONE</span></a>
+
+        <p>Men's Fashion | Harar & Dire Dawa | Ethiopia</p>
+
+        <p>
+            &copy; <span id="year"></span> ShoeZone Ethiopia.
+            All rights reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
